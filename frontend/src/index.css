@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #FAF3E0;
+  --bg-gradient: linear-gradient(135deg, #FAF3E0 0%, #EFEBE0 100%);
+  --surface-color: rgba(255, 255, 255, 0.6);
+  --surface-border: rgba(109, 76, 65, 0.15);
+  --text-primary: #3E2723;
+  --text-secondary: #5D4037;
+  --accent-color: #6D4C41;
+  --accent-hover: #5D4037;
+  --success-color: #2E7D32;
+  --danger-color: #C62828;
+  --glass-shadow: 0 8px 32px 0 rgba(62, 39, 35, 0.08);
+  --glass-blur: blur(12px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: var(--surface-color);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--surface-border);
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+  padding: 24px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+/* Base Elements */
+button {
+  cursor: pointer;
+  border: none;
+  background: var(--accent-color);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(109, 76, 65, 0.3);
+}
+
+input, textarea {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--surface-border);
+  color: var(--text-primary);
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--accent-color);
+}
