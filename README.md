@@ -4,7 +4,7 @@ Dự án này là một ứng dụng hỗ trợ ôn tập và giải đề thi t
 
 ## 🚀 Luồng Hoạt Động Cốt Lõi
 
-Hệ thống được thiết kế theo 4 giai đoạn chính để tối ưu hóa quá trình học tập:
+Hệ thống được thiết kế theo 5 giai đoạn chính để tối ưu hóa quá trình học tập:
 
 ### Giai đoạn 1: Số hóa đề thi (Image-to-Text)
 * **Hành động:** Người dùng tải file ảnh chứa đề thi lên hệ thống.
@@ -24,6 +24,10 @@ Hệ thống được thiết kế theo 4 giai đoạn chính để tối ưu h�
 ### Giai đoạn 4: Tạo Quiz củng cố & Lưu trữ (Spaced Repetition)
 * **Tạo Quiz củng cố:** Dựa trên kết quả bài làm (tập trung vào những câu làm sai, các câu lý thuyết đếm phát biểu hoặc có bẫy), AI sẽ sinh ra ngay một mini-quiz để người dùng luyện lại và khắc phục lỗi ngay lập tức.
 * **Lưu trữ & Gắn nhãn:** Đưa các câu hỏi sai/câu hay vào cơ sở dữ liệu và tự động gắn nhãn (label) theo chủ đề (VD: *Hóa hữu cơ - Este*, *Sinh học - Di truyền*). Dữ liệu này sẽ phục vụ cho thuật toán lặp lại ngắt quãng (Spaced Repetition) trong việc ôn tập lâu dài, giúp người dùng không bị quên kiến thức.
+
+### Giai đoạn 5: Xây dựng Cơ sở Tri thức (Knowledge Base) & Tái sử dụng
+* **Lưu trữ dài hạn (Memory/Database):** Dữ liệu về các bài toán, cách giải và lịch sử học tập được lưu trữ vững chắc trong bộ nhớ (Memory/Database).
+* **Hình thành Tri thức AI:** Hệ thống sẽ tổng hợp các phương pháp giải hay và tối ưu thành một "bộ não tri thức" riêng. Khi gặp những bài toán tương tự hoặc cùng cấu trúc trong tương lai, AI có thể nhận diện và tái sử dụng ngay tri thức này để đưa ra cách giải xuất sắc nhất mà không cần phải phân tích hay tìm kiếm lại từ đầu.
 
 ## 🌟 Đánh Giá Trải Nghiệm Người Dùng
 Luồng hoạt động này mang lại một trải nghiệm **cực kỳ mượt mà**, kết hợp giữa việc thi thử trên máy tính và sự hỗ trợ sát sao của một "gia sư AI". Người học được chấm điểm, giảng bài lại ngay lập tức và củng cố kiến thức liên tục, giúp tối ưu hóa hiệu quả học tập.
