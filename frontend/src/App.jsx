@@ -91,7 +91,7 @@ function App() {
           <div className="input-group">
             <input 
               type="password" 
-              placeholder="Nhập Google Gemini API Key của bạn..."
+              placeholder="Nhập OpenRouter API Key của bạn..."
               value={apiKey}
               onChange={(e) => setApiKey(e.target.value)}
             />
@@ -146,6 +146,7 @@ function App() {
               <ReactMarkdown 
                 remarkPlugins={[remarkGfm, remarkMath]}
                 rehypePlugins={[rehypeKatex]}
+                urlTransform={(url) => url}
               >
                 {result}
               </ReactMarkdown>
